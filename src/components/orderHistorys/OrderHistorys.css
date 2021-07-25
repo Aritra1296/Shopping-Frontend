@@ -1,0 +1,21 @@
+.order_image {
+  height: 300px !important;
+  width: 100% !important;
+}
+.order_card {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2),
+    0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.order_name_title {
+  font-size: 26px;
+  font-weight: 600;
+}
+.order_title {
+  font-size: 20px;
+  font-weight: 700;
+
+}
+.order_description {
+  font-size: 20px;
+  font-weight: 500;
+}

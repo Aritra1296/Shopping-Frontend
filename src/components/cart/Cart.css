@@ -1,0 +1,23 @@
+.cart_image{
+ height: 300px !important;
+ width: 100% !important;
+}
+.cart_card{
+box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cart_title{
+ font-size: 22px;
+ font-weight: 600;
+}
+.cart_description{
+ font-size: 18px;
+ font-weight: 400;
+}
+.cart_price{
+ font-size: 20px;
+ font-weight: 400;
+}
+.cart_status{
+ font-size: 14px;
+ font-weight: 350;
+}

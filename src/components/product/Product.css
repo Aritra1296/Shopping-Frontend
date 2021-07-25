@@ -1,0 +1,23 @@
+.procuct_image{
+ height: 100px !important;
+ width: 100% !important;
+}
+.procuct_card{
+ box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.procuct_title{
+ font-size: 22px;
+ font-weight: 600;
+}
+.procuct_description{
+ font-size: 16px;
+ font-weight: 400;
+}
+.procuct_price{
+ font-size: 20px;
+ font-weight: 400;
+}
+.procuct_status{
+ font-size: 14px;
+ font-weight: 350;
+}

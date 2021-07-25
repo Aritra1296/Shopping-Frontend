@@ -1,0 +1,17 @@
+.profile_card {
+  max-width: 960px !important;
+  margin: 0 auto;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2),
+    0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.profile_field {
+  margin-bottom: 18px;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  padding-left: 0.75rem !important;
+}
+.profile_input_field {
+  margin-bottom: 20px;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
