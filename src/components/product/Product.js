@@ -10,7 +10,11 @@ const Product = ({ product, addToCartHandler }) => {
           {product.productImage.map((images, index) => {
             return (
               <Carousel.Item key={images.image}>
-                <Image src={'http://localhost:3005/'+images} rounded className='cart_image' />
+                <Image
+                  src={'http://flybuyapi.aritrarivu.co.in/' + images}
+                  rounded
+                  className='cart_image'
+                />
               </Carousel.Item>
             )
           })}

@@ -40,9 +40,13 @@ const AddProduct = () => {
     bodyFormData.append('productStatus', productDetails.productStatus)
     bodyFormData.append('productMaxQuantiy', productDetails.productMaxQuantiy)
     axios
-      .post('http://localhost:3005/products/submitNew', bodyFormData, {
-        'Content-Type': 'multipart/form-data',
-      })
+      .post(
+        'http://flybuyapi.aritrarivu.co.in/products/submitNew',
+        bodyFormData,
+        {
+          'Content-Type': 'multipart/form-data',
+        }
+      )
       .catch((error) => {
         console.log(error)
       })

@@ -20,7 +20,9 @@ const AllCart = () => {
   const fetchUserPersonalDetails = async () => {
     try {
       await axios
-        .get(`http://localhost:3005/users/userDetails/${loginUserID}`)
+        .get(
+          `http://flybuyapi.aritrarivu.co.in/users/userDetails/${loginUserID}`
+        )
         .then((res, req) => {
           setUser(res.data)
         })
@@ -31,7 +33,7 @@ const AllCart = () => {
   const fetchCartItems = async () => {
     try {
       await axios
-        .get(`http://localhost:3005/carts/${loginUserID}`)
+        .get(`http://flybuyapi.aritrarivu.co.in/carts/${loginUserID}`)
         .then((res, req) => {
           setCarts(res.data)
         })
@@ -46,7 +48,7 @@ const AllCart = () => {
     try {
       console.log(id)
       await axios
-        .delete(`http://localhost:3005/carts/${id}`)
+        .delete(`http://flybuyapi.aritrarivu.co.in/carts/${id}`)
         .then((res, req) => {
           setCarts((dp) => {
             let idx = dp.findIndex((p) => p._id === id)
@@ -70,7 +72,7 @@ const AllCart = () => {
       console.log(user)
       console.log(carts)
       await axios
-        .post(`http://localhost:3005/orders/submitNew`, {
+        .post(`http://flybuyapi.aritrarivu.co.in/orders/submitNew`, {
           user,
           carts,
         })

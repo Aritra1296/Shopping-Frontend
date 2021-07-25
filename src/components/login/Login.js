@@ -24,7 +24,7 @@ const Login = () => {
     e.preventDefault()
     try {
       axios
-        .post(`http://localhost:3005/users/login`, userLogin)
+        .post(`http://flybuyapi.aritrarivu.co.in/users/login`, userLogin)
         .then((res, req) => {
           console.log('signed in')
           setloginUserID(res.data._id)

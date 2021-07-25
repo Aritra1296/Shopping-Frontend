@@ -26,7 +26,9 @@ const Profile = () => {
   const fetchUserPersonalDetails = async () => {
     try {
       await axios
-        .get(`http://localhost:3005/users/userDetails/${loginUserID}`)
+        .get(
+          `http://flybuyapi.aritrarivu.co.in/users/userDetails/${loginUserID}`
+        )
         .then((res, req) => {
           setUser(res.data)
         })
@@ -43,10 +45,13 @@ const Profile = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    await axios.patch(`http://localhost:3005/users/edit/${loginUserID}`, user)
+    await axios.patch(
+      `http://flybuyapi.aritrarivu.co.in/users/edit/${loginUserID}`,
+      user
+    )
     alert('Contact details Updated successfully')
   }
-  
+
   //if(!userId)  return null
 
   return (

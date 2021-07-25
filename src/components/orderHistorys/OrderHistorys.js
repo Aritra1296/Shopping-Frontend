@@ -5,8 +5,7 @@ import axios from 'axios'
 import AuthContext from '../../auth/AuthContext'
 
 const OrderHistorys = () => {
-   const {  getLoggedIn, loginUserID } =
-     useContext(AuthContext)
+  const { getLoggedIn, loginUserID } = useContext(AuthContext)
 
   const [orders, setOrders] = useState([])
   console.log(orders)
@@ -19,7 +18,9 @@ const OrderHistorys = () => {
   const fetchItems = async () => {
     try {
       await axios
-        .get(`http://localhost:3005/orders/orderHistory/${loginUserID}`)
+        .get(
+          `http://flybuyapi.aritrarivu.co.in/orders/orderHistory/${loginUserID}`
+        )
         .then((res, req) => {
           setOrders(res.data)
           console.log(orders)

@@ -14,7 +14,7 @@ const DashBoardElement = ({ dashBoardProduct, deleteHandler }) => {
                   return (
                     <Carousel.Item>
                       <Image
-                        src={'http://localhost:3005/' + images}
+                        src={'http://flybuyapi.aritrarivu.co.in/' + images}
                         rounded
                         className='cart_image'
                       />

@@ -17,9 +17,11 @@ const Orders = () => {
 
   const fetchItems = async () => {
     try {
-      await axios.get(`http://localhost:3005/orders`).then((res, req) => {
-        setOrders(res.data)
-      })
+      await axios
+        .get(`http://flybuyapi.aritrarivu.co.in/orders`)
+        .then((res, req) => {
+          setOrders(res.data)
+        })
     } catch (error) {
       console.log(error)
     }

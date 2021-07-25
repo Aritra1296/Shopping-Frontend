@@ -19,9 +19,11 @@ const DashBoard = () => {
 
   const fetchDashBoardItems = async () => {
     try {
-      await axios.get(`http://localhost:3005/products`).then((res, req) => {
-        setDashBoardProducts(res.data)
-      })
+      await axios
+        .get(`http://flybuyapi.aritrarivu.co.in/products`)
+        .then((res, req) => {
+          setDashBoardProducts(res.data)
+        })
     } catch (error) {
       console.log(error)
     }
@@ -31,7 +33,7 @@ const DashBoard = () => {
     try {
       console.log(id)
       await axios
-        .delete(`http://localhost:3005/products/${id}`)
+        .delete(`http://flybuyapi.aritrarivu.co.in/products/${id}`)
         .then((res, req) => {
           setDashBoardProducts((dp) => {
             let idx = dp.findIndex((p) => p._id === id)

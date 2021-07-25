@@ -20,7 +20,7 @@ const Signup = () => {
     e.preventDefault()
     console.log(userDetails)
     axios
-      .post('http://localhost:3005/users', userDetails)
+      .post('http://flybuyapi.aritrarivu.co.in/users', userDetails)
       .then((response) => {
         console.log(response)
       })

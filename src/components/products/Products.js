@@ -16,9 +16,11 @@ const Products = () => {
 
   const fetchItems = async () => {
     try {
-      await axios.get(`http://localhost:3005/products`).then((res, req) => {
-        setProducts(res.data)
-      })
+      await axios
+        .get(`http://flybuyapi.aritrarivu.co.in/products`)
+        .then((res, req) => {
+          setProducts(res.data)
+        })
     } catch (error) {
       console.log(error)
     }
@@ -27,7 +29,7 @@ const Products = () => {
   const addToCart = async (product, loginUserID) => {
     try {
       await axios
-        .post(`http://localhost:3005/carts/submitNew`, {
+        .post(`http://flybuyapi.aritrarivu.co.in/carts/submitNew`, {
           loginUserID,
           productName: product.productName,
           productDescription: product.productDescription,

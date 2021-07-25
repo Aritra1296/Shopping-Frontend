@@ -17,7 +17,7 @@ const OrderHistorysComponent = ({ order, productDetail }) => {
                   return (
                     <Carousel.Item key={images.image}>
                       <Image
-                        src={'http://localhost:3005/' + images}
+                        src={'http://flybuyapi.aritrarivu.co.in/' + images}
                         rounded
                         className='order_image'
                       />

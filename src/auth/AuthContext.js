@@ -10,7 +10,7 @@ function AuthContextProvider(props) {
   async function getLoggedIn() {
     try {
       const loggedInRes = await axios.get(
-        'http://localhost:3005/users/loggedIn'
+        'http://flybuyapi.aritrarivu.co.in/users/loggedIn'
       )
       setLoggedIn(loggedInRes.data.loggedIn)
       setloginUserID(loggedInRes.data.user)

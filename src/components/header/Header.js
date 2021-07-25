@@ -27,7 +27,7 @@ const Header = () => {
 
   async function logOut() {
     try {
-      await axios.get(`http://localhost:3005/users/logout`)
+      await axios.get(`http://flybuyapi.aritrarivu.co.in/users/logout`)
       await getLoggedIn()
       alert('You Have Successfully Logged Off')
       console.log('logged out')
